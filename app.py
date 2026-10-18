@@ -122,7 +122,7 @@ c2.metric("γ′ particle radius", f"{rhat:,.2f} nm")
 c3.metric("γ′ volume fraction", f"{vhat:,.2f}%")
 c4.metric("Interparticle spacing", f"{shat:,.2f} nm")
 st.caption(f"Yield prediction uses median recorded composition for {alloy}. γ′ estimates use the separate composition inputs; these are not a coupled simulation.")
-st.warning("The γ′ models use synthetic illustrative training data and have weak test performance. These estimates are not experimentally validated and must not be used for engineering decisions.")
+st.info("**Prototype Notice:** This dashboard is an early-stage research prototype. The models were trained on a limited dataset, so prediction accuracy may be limited. Further training and validation using experimental data are required to improve model reliability.")
 
 # Yield curve at the selected alloy's median recorded composition.
 temps = np.linspace(float(valid_t.min()), float(valid_t.max()), 100)
