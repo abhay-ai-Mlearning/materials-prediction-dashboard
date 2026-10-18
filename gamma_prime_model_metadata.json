@@ -1,0 +1,18 @@
+{
+  "feature_columns": [
+    "aging_temperature_c",
+    "log10_aging_time_hours",
+    "nickel_content_wt_percent",
+    "aluminum_content_wt_percent",
+    "titanium_content_wt_percent",
+    "tantalum_content_wt_percent"
+  ],
+  "targets": {
+    "radius": "gamma_prime_particle_radius_nm",
+    "volume_fraction": "gamma_prime_volume_fraction_percent",
+    "spacing": "interparticle_spacing_nm"
+  },
+  "dataset_type": "Synthetic illustrative data; not experimental measurements",
+  "split": "80/20 random train-test split, random_state=42",
+  "note": "Metrics are held-out results on synthetic data. The final saved models are refitted on all available rows."
+}
